@@ -23,6 +23,7 @@
           <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
           <a href="{{route('about')}}" class="nav-item nav-link">Tentang Kami</a>
           <a href="{{route('tiket')}}" class="nav-item nav-link">tiket</a>
+          <a href="{{route('tiket.anda')}}" class="nav-item nav-link">Tiket Anda</a>
         </div>
         @auth
         <form action="{{route('logout') }}" method="post" id="form">@csrf</form>

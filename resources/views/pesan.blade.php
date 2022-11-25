@@ -135,17 +135,17 @@ data-client-key="SB-Mid-client-gFjgNCRVVEO1UZsX"></script>
       onSuccess: function(result){
         /* You may add your own implementation here */
         // alert("payment success!"); console.log(result);
-        response(result)
+        responses(result)
       },
       onPending: function(result){
         /* You may add your own implementation here */
         // alert("wating your payment!"); console.log(result);
-        response(result)
+        responses(result)
       },
       onError: function(result){
         /* You may add your own implementation here */
         // alert("payment failed!"); console.log(result);
-        response(result)
+        responses(result)
       },
       onClose: function(){
         /* You may add your own implementation here */
@@ -153,8 +153,9 @@ data-client-key="SB-Mid-client-gFjgNCRVVEO1UZsX"></script>
       }
     })
 
-    function response(result){
-      document.querySelector('#json') = JSON.stringify(result);
+    function responses(result){
+      console.log(result)
+      document.querySelector('#json').value = JSON.stringify(result);
       document.querySelector('#form-bayar').submit();
     }
 </script>

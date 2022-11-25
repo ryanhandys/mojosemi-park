@@ -51,4 +51,9 @@ class TiketController extends Controller
 
         return redirect()->route('home');
     }
+
+    public function tiketAnda()
+    {
+        return view('tiket-anda');
+    }
 }

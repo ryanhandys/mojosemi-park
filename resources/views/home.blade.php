@@ -111,8 +111,7 @@ data-wow-delay="0.1s"
             <div class="position-relative">
               <img class="img-fluid" src="img/animal-md-1.jpg" alt="" />
               <div class="animal-text p-4">
-                <p class="text-white small text-uppercase mb-0">Animal</p>
-                <h5 class="text-white mb-0">Elephant</h5>
+               
               </div>
             </div>
           </a>
@@ -126,8 +125,7 @@ data-wow-delay="0.1s"
             <div class="position-relative">
               <img class="img-fluid" src="img/animal-lg-1.jpg" alt="" />
               <div class="animal-text p-4">
-                <p class="text-white small text-uppercase mb-0">Animal</p>
-                <h5 class="text-white mb-0">Elephant</h5>
+               
               </div>
             </div>
           </a>
@@ -145,8 +143,7 @@ data-wow-delay="0.1s"
             <div class="position-relative">
               <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
               <div class="animal-text p-4">
-                <p class="text-white small text-uppercase mb-0">Animal</p>
-                <h5 class="text-white mb-0">Elephant</h5>
+               
               </div>
             </div>
           </a>
@@ -158,10 +155,9 @@ data-wow-delay="0.1s"
             data-lightbox="animal"
           >
             <div class="position-relative">
-              <img class="img-fluid" src="img/animal-md-2.jpg" alt="" />
+              <img class="img-fluid" src="img/animal-md-2.png" alt="" />
               <div class="animal-text p-4">
-                <p class="text-white small text-uppercase mb-0">Animal</p>
-                <h5 class="text-white mb-0">Elephant</h5>
+               
               </div>
             </div>
           </a>
@@ -179,8 +175,7 @@ data-wow-delay="0.1s"
             <div class="position-relative">
               <img class="img-fluid" src="img/animal-md-3.jpg" alt="" />
               <div class="animal-text p-4">
-                <p class="text-white small text-uppercase mb-0">Animal</p>
-                <h5 class="text-white mb-0">Elephant</h5>
+               
               </div>
             </div>
           </a>
@@ -194,8 +189,7 @@ data-wow-delay="0.1s"
             <div class="position-relative">
               <img class="img-fluid" src="img/animal-lg-3.jpg" alt="" />
               <div class="animal-text p-4">
-                <p class="text-white small text-uppercase mb-0">Animal</p>
-                <h5 class="text-white mb-0">Elephant</h5>
+               
               </div>
             </div>
           </a>
