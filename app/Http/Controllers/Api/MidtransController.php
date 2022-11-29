@@ -10,7 +10,7 @@ class MidtransController extends Controller
     public static function midtrans($total)
     {        
         // Set your Merchant Server Key
-        \Midtrans\Config::$serverKey = 'SB-Mid-server-6zvJZaIXnydlTvKsu8gcpS13';
+        \Midtrans\Config::$serverKey = 'SB-Mid-server-jj5DAwk-l2unjUsvsU6Pmrtc';
         // Set to Development/Sandbox Environment (default). Set to true for Production Environment (accept real transaction).
         \Midtrans\Config::$isProduction = false;
         // Set sanitization on (default)

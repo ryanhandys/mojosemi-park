@@ -124,7 +124,7 @@ var quantitiy=0;
 @if (session('token'))
 <script type="text/javascript"
 src="https://app.sandbox.midtrans.com/snap/snap.js"
-data-client-key="SB-Mid-client-gFjgNCRVVEO1UZsX"></script>
+data-client-key="SB-Mid-client-6B4WvX7pvESaliP8"></script>
 <form action="{{ route('bayar.simpan') }}" method="post" id="form-bayar">
   @csrf
   <input type="hidden" name="id" value="{{ session()->get('id') }}">

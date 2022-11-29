@@ -9,46 +9,46 @@
           <div class="container">
             <p class="my-5 mx-0" style="font-size: 30px;">Tiket pesanan Anda</p>
             <div class="row">
-              <ul class="list-unstyled">
-                <li class="text-black">Nama : {{auth()->user()->name}}</li>
-                <li class="text-muted mt-1"><span class="text-black">Email :  {{auth()->user()->email}}</span></li>
-                <li class="text-black mt-1">Tanggal Pemesanan Tiket</li>
-                <li class="text-black mt-1">Kode Pemesanan</li>
-              </ul>
-              <hr>
-              <div class="col-xl-10">
-                <p>Pro Package</p>
+              <div class="col-8">
+                <ul class="list-unstyled">
+                  <li class="text-black">Nama : {{auth()->user()->name}}</li>
+                  <li class="text-muted mt-1"><span class="text-black">Email :  {{auth()->user()->email}}</span></li>
+                  <li class="text-black mt-1">Tanggal Pemesanan Tiket <br> {{ Carbon\Carbon::parse($pesanan->tanggal)->format('d M Y') }}</li>
+                  <li class="text-black mt-1">Kode Pemesanan <br> {{ $pesanan->order_id }}</li>
+                </ul>
               </div>
-              <div class="col-xl-2">
-                <p class="float-end">$199.00
-                </p>
-              </div>
-              <hr>
-            </div>
-            <div class="row">
-              <div class="col-xl-10">
-                <p>Consulting</p>
-              </div>
-              <div class="col-xl-2">
-                <p class="float-end">$100.00
-                </p>
+              <div class="col-4 d-flex justify-content-end mb-2" style="margin-top: -9rem; margin-left: -1rem;">
+                <div>
+                  @php
+                      $link = url('tiket/'.$pesanan->order_id.'/datang')
+                  @endphp
+                  {!! DNS2D::getBarcodeHTML("$link", 'QRCODE') !!}
+                </div>
               </div>
               <hr>
             </div>
             <div class="row">
               <div class="col-xl-10">
-                <p>Support</p>
+                <p>Jumlah Tiket</p>
               </div>
               <div class="col-xl-2">
-                <p class="float-end">$10.00
+                <p class="float-end">{{ $pesanan->jumlah }} Tiket
                 </p>
               </div>
-              <hr style="border: 2px solid black;">
+              <hr>
+              <div class="col-xl-10">
+                <p>Subtotal</p>
+              </div>
+              <div class="col-xl-2">
+                <p class="float-end">{{ number_format($pesanan->total) }}
+                </p>
+              </div>
+              <hr>
             </div>
             <div class="row text-black">
     
               <div class="col-xl-12">
-                <p class="float-end fw-bold">Total: $10.00
+                <p class="float-end fw-bold">Total: Rp{{ number_format($pesanan->total) }}
                 </p>
               </div>
               <hr style="border: 2px solid black;">

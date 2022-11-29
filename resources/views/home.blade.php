@@ -75,7 +75,7 @@ data-wow-delay="0.1s"
     >
       <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
       <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-      <p class="text-white mb-0">Save Wild Life</p>
+      <p class="text-white mb-0">Paket Wisata</p>
     </div>
   </div>
 </div>
